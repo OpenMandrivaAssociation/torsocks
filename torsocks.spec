@@ -4,7 +4,7 @@
 
 Name:              torsocks
 Version:           1.3
-Release:           2
+Release:           3
 
 Summary:           Use SOCKS-friendly applications with Tor
 Group:             Networking/Other
