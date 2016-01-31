@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   torsocks-1.3.tar.gz: 456fe8a89956497898c51ed4e1a2b3316d154dac
+sources:
+  torsocks-2.1.0.tar.bz2: fb11f303af8da97653a731568fce0551f7aeaf83
