@@ -72,7 +72,6 @@ install -p -D -m 0644 %{SOURCE3} \
 %files
 %config(noreplace) %{_sysconfdir}/bash_completion.d/torsocks
 %config(noreplace) %{_sysconfdir}/tor/torsocks.conf
-%doc ChangeLog INSTALL
 %{_bindir}/torsocks
 %{_bindir}/uwt
 %{_mandir}/man1/torsocks.1.*
@@ -84,4 +83,5 @@ install -p -D -m 0644 %{SOURCE3} \
 %{_libdir}/torsocks/libtorsocks.so.%{major}*
 
 %files -n %{devname}
+%doc ChangeLog INSTALL DEBUG SOCKS5 socks-extensions.txt
 %{_libdir}/torsocks/libtorsocks.so
