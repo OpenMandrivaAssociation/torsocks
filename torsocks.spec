@@ -53,11 +53,12 @@ autoreconf -fiv
 
 # Remove extraneous files.
 rm -f %{buildroot}%{_libdir}/torsocks/libtorsocks.{a,la}*
-rm -f %{buildroot}%{_datadir}/DEBUG
-rm -f %{buildroot}%{_datadir}/README*
-rm -f %{buildroot}%{_datadir}/SOCKS*
+rm -f %{buildroot}%{_datadir}/doc/%{name}/*
+rm -f %{buildroot}%{_datadir}/doc/README*
+rm -f %{buildroot}%{_datadir}/doc/SOCKS*
 rm -f %{buildroot}%{_datadir}/*.sh
 rm -f %{buildroot}%{_datadir}/*.txt
+rm -f %{buildroot}%{_datadir}/doc/*.txt
 rm -f %{buildroot}%{_datadir}/*.patch
 
 # Include modified usewithtor to support setting proxy type, ip and port using
@@ -83,5 +84,4 @@ install -p -D -m 0644 %{SOURCE3} \
 %{_libdir}/torsocks/libtorsocks.so.%{major}*
 
 %files -n %{devname}
-%doc ChangeLog INSTALL DEBUG SOCKS5 socks-extensions.txt
 %{_libdir}/torsocks/libtorsocks.so
