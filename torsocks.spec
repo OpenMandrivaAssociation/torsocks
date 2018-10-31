@@ -4,7 +4,7 @@
 
 Name:              torsocks
 Version:           2.2.0
-Release:           2
+Release:           3
 Summary:           Use SOCKS-friendly applications with Tor
 Group:             Networking/Other
 License:           GPLv2+
