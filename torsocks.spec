@@ -3,8 +3,8 @@
 %define devname %mklibname -d torsocks
 
 Name:              torsocks
-Version:           2.2.0
-Release:           3
+Version:           2.3.0
+Release:           1
 Summary:           Use SOCKS-friendly applications with Tor
 Group:             Networking/Other
 License:           GPLv2+
