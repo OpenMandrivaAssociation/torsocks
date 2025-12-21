@@ -16,6 +16,11 @@ Source0:	   https://github.com/dgoulet/torsocks/archive/v%{version}.tar.gz
 Source2:           https://raw.github.com/adrelanos/Whonix/stable/whonix_shared/usr/local/bin/uwt
 Source3:           torsocks.bash_completion
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Torsocks allows you to use most SOCKS-friendly applications in a safe way
 with Tor. It ensures that DNS requests are handled safely and explicitly
